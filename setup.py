@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="llm_batch_processor",
-    version="0.1.2",
+    version="0.1.3",
     author="Karthik Ravichandran",
     author_email="tkgravikarthik@gmail.com",
     description="A package to process CSV text data in batches using OpenAI API",
