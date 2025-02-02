@@ -43,7 +43,8 @@ def get_config():
                         help="Column name for storing responses (default: response)")
     parser.add_argument("--prompt_file", type=str, default="data/prompt.txt",
                         help="Path to the text file containing the prompt")
-
+    parser.add_argument("--model_name", type=str, default="gpt-4o-mini",
+                        help="Open AI model identifier")
     args = parser.parse_args()
 
     return {
@@ -54,7 +55,8 @@ def get_config():
         "OUTPUT_CSV": args.output_csv,
         "TEXT_COLUMN": args.text_column,
         "RESPONSE_COLUMN": args.response_column,
-        "PROMPT_FILE": args.prompt_file
+        "PROMPT_FILE": args.prompt_file,
+        "MODEL_NAME": args.model_name
     }
 
 # Load configuration when imported
