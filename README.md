@@ -38,23 +38,31 @@ llm_batch_processor/
 
 ---
 
-## **🛠 Installation**
+## **🛠 Installation with repo**
 
 ### **1️⃣ Clone the repository**
 ```bash
-git clone https://github.com/yourusername/llm_batch_processor.git
+git clone https://github.com/karthikRavichandran/llm_batch_processor.git
 cd llm_batch_processor
 ```
-
+Or
 ### **2️⃣ Install the package**
 ```bash
-pip install -e .
+pip install llm-batch-process
 ```
 
 ### **3️⃣ Set up OpenAI API Key**  
 Create a `.env` file in the root directory and add:
 ```ini
 OPENAI_API_KEY=your_api_key_here
+Project_Id=your_project_id (optional)
+```
+or 
+
+```bash
+export OPENAI_API_KEY="your_api_key_here"
+export Project_Id="your_project_id" #Optional 
+
 ```
 
 ---
