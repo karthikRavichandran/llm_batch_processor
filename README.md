@@ -55,7 +55,7 @@ pip install llm-batch-process
 Create a `.env` file in the root directory and add:
 ```ini
 OPENAI_API_KEY=your_api_key_here
-Project_Id=your_project_id (optional)
+Project_Id=your_project_id #optional
 ```
 or 
 
@@ -75,7 +75,27 @@ export Project_Id="your_project_id" #Optional
 
 ### **2️⃣ Run the batch processor**
 ```bash
-llm-process
+llm-process 
+```
+
+CLI args
+```text
+  --api_key API_KEY     OpenAI API Key (default: from environment variable)
+  --project_id PROJECT_ID
+                        Project ID (default: from environment variable)
+  --batch_size BATCH_SIZE
+                        Batch size for processing (default: 10)
+  --input_csv INPUT_CSV
+                        Path to input CSV file (default: data/input.csv)
+  --output_csv OUTPUT_CSV
+                        Path to output CSV file (default: data/output.csv)
+  --text_column TEXT_COLUMN
+                        Column name containing input text (default: text)
+  --response_column RESPONSE_COLUMN
+                        Column name for storing responses (default: response)
+  --prompt_file PROMPT_FILE
+                        Path to the text file containing the prompt
+
 ```
 This will:
 - Read data from `data/input.csv`
