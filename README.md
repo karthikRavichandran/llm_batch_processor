@@ -70,8 +70,10 @@ export Project_Id="your_project_id" #Optional
 ## **🚀 Usage**
 
 ### **1️⃣ Prepare your CSV file**
-- Place your input CSV file in the `data/` folder.
-- Ensure it has a column containing text (default: `"text"`).
+- Place your input CSV file in the `data/` folder or mention the location using `--input_csv`
+- Ensure it has a column containing text (default: `"text"`) or mention the column name using `--text_column`
+- Place your prompt in prompt.txt or mention it using `--prompt_file`
+- 
 
 ### **2️⃣ Run the batch processor**
 ```bash
